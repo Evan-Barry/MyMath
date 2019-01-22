@@ -75,4 +75,60 @@ public class MyMath {
         return isPrime;
     }
 
+    public static int[] countNumbers(int[] numbers)
+    {
+        int count[] = new int[101];
+
+        int index = 0;
+        int number = numbers[index];
+
+        while(number >= 1)
+        {
+            count[number]++;
+            index++;
+            number = numbers[index];
+        }
+
+        return count;
+    }
+
+    public static int countWords(String str)
+    {
+        int numWords = 0;
+        int whiteSpaces = 0;
+        int j;
+
+        if(str.isEmpty() || str == null)
+        {
+            return numWords;
+        }
+        else
+        {
+            numWords++;
+        }
+
+        for(j = 0; j < str.length(); j++)
+        {
+            if(str.charAt(j) == ' ')
+            {
+                whiteSpaces++;
+            }
+        }
+
+        if(whiteSpaces == j)
+        {
+            return 0;
+        }
+
+        for(int i = 0; i < str.length(); i++)
+        {
+            if(str.charAt(i) == ' ')
+            {
+                numWords++;
+            }
+        }
+
+        return numWords;
+    }
+
 }

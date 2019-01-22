@@ -1,7 +1,7 @@
 public class MyMathDriver {
     public static void main(String[] args) {
 
-        int smallest;
+        /*int smallest;
 
         smallest =  MyMath.findSmallest(1,2,4);//expected 1
         System.out.println("Smallest number: " + smallest);
@@ -68,5 +68,20 @@ public class MyMathDriver {
 
         isPrime = MyMath.isPrime(4);//expected false
         System.out.println("Is 4 prime : " + isPrime);
+
+
+        int count[] = new int[101];
+
+        int numbers[] = {15,98,98,36,48,92,12,1,12,13,98,45,62,31,25,48,65,12,-1};
+        count = MyMath.countNumbers(numbers);
+        for(int i = 1; i < count.length; i++)
+        {
+            System.out.println(i + " - " + count[i]);
+        }*/
+
+        int numWords;
+
+        numWords = MyMath.countWords("How are you");
+        System.out.println("Number of words : " + numWords);
     }
 }
